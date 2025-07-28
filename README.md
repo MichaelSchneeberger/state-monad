@@ -30,10 +30,6 @@ The result is a chain of operations where the state flows through each step, wit
 
 In this example, we define the function `collect_even_numbers`, a stateful operation that adds the provided number `num` to the state if it is even.
 
-<!-- In this example, we define the function `collect_even_numbers` - representing the stateful operation -, which returns a custome state monad `CollectEvenNumbers` that adds the number to the state if the given number is even, or a default state monad encapsulating the value otherwise.
-The `example` function performs monadic operations using the `collect_even_numbers` operator, resulting in a state monad.
-Finally, the constructed state monad is applied with an empty tuple as the initial state. -->
-
 
 ``` python
 from typing import override
@@ -169,4 +165,4 @@ Several state monad implementations exist in Python, such as:
 * [https://github.com/dry-python/returns](https://github.com/dry-python/returns)
 * [https://github.com/jasondelaat/pymonad](https://github.com/jasondelaat/pymonad/blob/release/pymonad/state.py)
 
-However, these implementations tend to be unnecessary complex, as they attempt to directly translate functional programming concepts into Python -- a language that only weakly supports types through type hinting.
+However, these implementations tend to be unnecessary complex, as they attempt to directly translate functional programming concepts into Python - a language that only weakly supports types through type hinting.
